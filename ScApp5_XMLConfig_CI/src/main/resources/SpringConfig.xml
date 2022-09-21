@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="emp" class="in.nareshit.bean.Employee">
+		<constructor-arg>
+			<value>E001</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>Ravi</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>12000</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="emp2" class="in.nareshit.bean.Employee">
+		<constructor-arg name="eid">
+			<value>E002</value>
+		</constructor-arg>
+		<constructor-arg name="name">
+			<value>Ravi</value>
+		</constructor-arg>
+		<constructor-arg name="sal" value="12001">
+		</constructor-arg>
+	</bean>
+	
+	
+</beans>
+

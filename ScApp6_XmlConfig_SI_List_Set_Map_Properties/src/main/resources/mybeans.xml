@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p">
+
+	<!-- bean definitions here -->
+	<bean id="student" class="in.nareshit.bean.Student">
+		<property name="sid" value="S001"></property>
+		<property name="sname" value="Ravi"></property>
+
+		<property name="marks">
+			<list>
+				<value>95</value>
+				<value>97</value>
+				<null></null>
+				<null />
+				<value>97</value>
+				<value>95</value>
+			</list>
+		</property>
+
+		<property name="subjects">
+			<set>
+				<value>ENG</value>
+				<value>TEL</value>
+				<value>MAT</value>
+				<value>SCI</value>
+				<value>SOC</value>
+				<null></null>
+				<null />
+			</set>
+		</property>
+
+		<property name="results1">
+			<map>
+				<entry key="ENG" value="P"></entry>
+				<entry key="TEL" value="P" />
+				<entry key="MATH" value="F"></entry>
+				<entry key="PHY" value="A"></entry>
+			</map>
+		</property>
+		<property name="results2">
+			<map>
+				<entry>
+					<key>
+						<value>SONGS</value>
+					</key>
+					<value>P</value>
+				</entry>
+				<entry>
+					<key>
+						<value>DANCE</value>
+					</key>
+					<value>F</value>
+				</entry>
+			</map>
+		</property>
+		<property name="results3">
+			<map>
+				<entry key="CRICKET">
+					<value>P</value>
+				</entry>
+				<entry key="FOOTBLL">
+					<value>F</value>
+				</entry>
+			</map>
+		</property>
+		<property name="results4">
+			<map>
+				<entry value="P">
+					<key>
+						<value>Quiz</value>
+					</key>
+				</entry>
+				<entry value="F">
+					<key>
+						<value>SUDOKO</value>
+					</key>
+				</entry>
+			</map>
+		</property>
+
+		
+		<property name="data">
+			<props>
+				<prop key="MATH">Failed in Practical exam</prop>
+				<prop key="PHY">Absent: not attended</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
