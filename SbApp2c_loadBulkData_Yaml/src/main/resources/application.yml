@@ -1,0 +1,17 @@
+my:
+  app:
+    emp:
+      exps:
+        DBS: '3yrs'
+        GL: '3.3yrs'
+        HCL: '3.3yrs'
+      mnos: 7777887777,6666677666
+      sal: '29000.00'
+      qualfs[1]: MCA
+      qualfs[0]: BCA
+      id: '206'
+      name: Ravi
+      mgrs: Petey Cruiser,Anna Sthesia,Paul Molive,Buck Kinnear
+      addr:
+        pin: 533001
+
