@@ -1,7 +1,7 @@
 # Folder
 /target/
 */target/**
-**/META-INF/
+#**/META-INF/
 !.mvn/wrapper/maven-wrapper.jar
 */.mvn/**
 */mvnw
