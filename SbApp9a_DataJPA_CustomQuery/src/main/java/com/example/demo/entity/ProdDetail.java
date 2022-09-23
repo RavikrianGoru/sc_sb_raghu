@@ -1,0 +1,26 @@
+package com.example.demo.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name="prod_detail_tab")
+public class ProdDetail {
+
+	@Id
+	@Column(name="pcode")
+	private String prodCode;
+	@Column(name="pname")
+	private String prodName;
+	@Column(name="pprice")
+	private Double prodPrice;
+}
