@@ -9,5 +9,4 @@
 </h1>
 	Please wait 5 secs, dont refresh or press back button
 </body>
-
 </html>

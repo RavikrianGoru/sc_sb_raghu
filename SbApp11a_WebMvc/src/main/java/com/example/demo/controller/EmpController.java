@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
+<<<<<<< HEAD
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,12 +14,16 @@ public class EmpController {
 	
 	//1.
 	//@RequestMapping(path="/emp/show", method = RequestMethod.GET) --> old style
+=======
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller//Component + Web
+public class EmpController {
 	@GetMapping(path = "/emp/show")
 	public String showEmpHome()
 	{
 		return "EmpHome";
 	}
-	
 	
 	//2. register form
 	@GetMapping(path = "/emp/register")
