@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<bean id="token" class="in.rk.spring.lookup.bean.PrototypeBeanToken" scope="prototype">
+		<property name="name" value="ChildProtoTypeBean-1" />
+	</bean>
+	<bean id="tokenMachine" class="in.rk.spring.lookup.bean.SingletonBeanTokenMachine" scope="singleton">
+		<property name="name" value="ParentSingletonTypeBean-1" />
+		<lookup-method name="generatedToken" bean="token"/>
+	</bean>
+</beans>
