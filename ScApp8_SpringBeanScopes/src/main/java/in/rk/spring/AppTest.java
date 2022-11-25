@@ -34,6 +34,9 @@ public class AppTest {
 		System.out.println(t1+"----"+t1.hashCode());
 		System.out.println(t2+"----"+t2.hashCode());
 		System.out.println(t3+"----"+t3.hashCode());
+		
+		StringBuffer sb= con.getBean("stringBuffer",StringBuffer.class);
+		System.out.println(sb);
 	}
 
 }
