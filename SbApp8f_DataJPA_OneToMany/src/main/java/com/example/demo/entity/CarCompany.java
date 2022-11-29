@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -33,9 +33,9 @@ public class CarCompany {
 	@Column(name="cbase_location")
 	private String baseLocation;
 
-	@Temporal(TemporalType.DATE)
+	//@Temporal(TemporalType.DATE)
 	@Column(name="est_date")
-	private Date establishmentDate;
+	private LocalDate establishmentDate; //AttributConvertions is applied :auto
 	
 	@OneToMany
 	@JoinColumn(name="midFK")

@@ -20,7 +20,7 @@ import lombok.NoArgsConstructor;
 public class CarModel {
 
 	@Id
-	@Column(name="mid")
+	@Column(name="mid", updatable = false, nullable = false)
 	private Integer modelId;;
 
 	@Column(name="mname")

@@ -1,6 +1,7 @@
 package com.example.demo;
 
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -26,6 +27,7 @@ public class TestDataRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+		
 		CarModel cm1= new CarModel(1001, "Ertiga", new Date(1980, 0, 1), 400000.00);
 		CarModel cm2= new CarModel(1002, "Brezza", new Date(1990, 0, 1), 500000.00);
 		CarModel cm3= new CarModel(1003, "Alto", new Date(2000, 0, 1), 600000.00);
@@ -37,7 +39,7 @@ public class TestDataRunner implements CommandLineRunner {
 		mModels.add(cm1);
 		mModels.add(cm2);
 		mModels.add(cm3);
-		CarCompany cc1= new CarCompany(201, "Maruti", "JPN", new Date(1975, 0, 1), mModels);
+		CarCompany cc1= new CarCompany(201, "Maruti", "JPN", LocalDate.of(1980, 1, 2), mModels);
 		ccRepo.save(cc1);
 		
 	}
