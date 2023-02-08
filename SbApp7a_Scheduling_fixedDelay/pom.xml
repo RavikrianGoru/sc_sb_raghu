@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SbApp7a_Scheduling_fixedDelay</artifactId>
+	<artifactId>SbApp6_Scheduling_fixedDelay</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SbApp7a_Scheduling_fixedDelay</name>
 	<description>Demo project for Spring Boot</description>

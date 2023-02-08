@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SbApp4a_SpringScopesSingletonePrototype</artifactId>
+	<artifactId>SbApp5a_SpringScopesSingletonePrototype</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SbApp4a_SpringScopesSingletonePrototype</name>
 	<description>Demo project for Spring Boot</description>
