@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SbApp6a_JDBC_Ds_Jt_Objects_verify</artifactId>
+	<artifactId>SbApp7_JDBC_Ds_Jt_Objects_verify</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SbApp6a_JDBC_Ds_Jt_Objects_verify</name>
+	<name>SbApp7_JDBC_Ds_Jt_Objects_verify</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
