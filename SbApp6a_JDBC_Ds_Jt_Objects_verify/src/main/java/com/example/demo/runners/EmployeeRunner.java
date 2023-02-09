@@ -17,17 +17,17 @@ public class EmployeeRunner implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		//Insert operation
-		dao.saveEmployee(new Employee(2001,"RK",35000.00));
-		dao.saveEmployee(new Employee(2011,"PK",36000.00));
-		dao.saveEmployee(new Employee(2021,"PL",37000.00));
-		dao.saveEmployee(new Employee(2031,"GD",38000.00));
+//		dao.saveEmployee(new Employee(2001,"RK",35000.00));
+//		dao.saveEmployee(new Employee(2011,"PK",36000.00));
+//		dao.saveEmployee(new Employee(2021,"PL",37000.00));
+//		dao.saveEmployee(new Employee(2031,"GD",38000.00));
 		
 		//Update
-		dao.updateEmployee(new Employee(1021,"PLL",3000.00));
+//		dao.updateEmployee(new Employee(1021,"PLL",3000.00));
 		
 		//Delete
-		dao.deleteEmployee(1021);
-		dao.deleteEmployeeByName("GD");
+//		dao.deleteEmployee(1021);
+//		dao.deleteEmployeeByName("GD");
 	}
 
 }
