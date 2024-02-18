@@ -32,8 +32,8 @@ public class JdbcConnectionCheckRunner implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 
 		System.out.println("Welcome to Spring Boot JDBC");
-		System.out.println(ds);
-		System.out.println(jt);
+		System.out.println("Datasource: "+ds);
+		System.out.println("JDBCTemplate: "+jt);
 		System.out.println("satic fields initialize with PostConstruct staticJt "+staticJt);
 		System.out.println("satic fields initialize with PostConstruct staticDs "+staticDs);
 	}
