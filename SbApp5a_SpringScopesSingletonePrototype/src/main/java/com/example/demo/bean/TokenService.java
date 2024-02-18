@@ -2,6 +2,7 @@ package com.example.demo.bean;
 
 import java.util.Random;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
