@@ -1,6 +1,9 @@
 package com.example.demo.dao;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -34,6 +37,18 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 	public int deleteEmployeeByName(String ename) {
 		String sql1="delete from emp where ename=?";
 		return jt.update(sql1, ename);
+	}
+
+	@Override
+	public List<Employee> getNEmployees(int n) {
+		String sql1="select * from emp limit "+n;
+		return jt.query(sql1, new EmployeeRowMapper());
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		String sql1="select * from emp";
+		return jt.query(sql1, new BeanPropertyRowMapper(Employee.class));
 	}
 
 }

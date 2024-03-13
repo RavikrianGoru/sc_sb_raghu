@@ -28,6 +28,11 @@ public class EmployeeRunner implements CommandLineRunner {
 		//Delete
 //		dao.deleteEmployee(1021);
 //		dao.deleteEmployeeByName("GD");
+		
+		//Custom row mapper
+		System.out.println(dao.getNEmployees(5));
+
+		System.out.println(dao.getAllEmployees());
 	}
 
 }

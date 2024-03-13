@@ -41,6 +41,7 @@ public class EmpJdbcOperationsRunner implements CommandLineRunner{
 		System.out.println("Deleted rows:"+count);
 		*/
 		
+		
 	}
 }
 
